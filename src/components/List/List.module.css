@@ -1,0 +1,16 @@
+.list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    list-style: none; 
+    padding: 0; 
+}
+
+.list__item {
+    margin-inline: 11%;
+}
+
+.cont {
+    margin-block: 15px;
+    width: 300px;
+}

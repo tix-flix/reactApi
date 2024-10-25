@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Layout from "./components/Layout/Layout";
 import List from "./components/List/List";
+import Buttons from "./components/UI/Buttons/Buttons";
 
 function App() {
   const [dota, setDota] = useState([]);
@@ -14,24 +15,12 @@ function App() {
   }, []);
   console.log(dota);
 
-  // const [users, setUsers] = useState([
-  //   {name: "Sarah", age: 22, job: "Driver"},
-  //   {name: "Джамал", age: 16, job: "Тачкист"},
-  //   {name: "Ахмед", age: 44, job: "Тандыр-master"},
-  // ])
 
   return (
     <>
       <Layout>
-        <>
-          {dota.map((e, i) => (
-            <div key={e.id}>
-              <h1>{e.name}</h1>
-              <h2>{e.status}</h2>
-              <h2>{e.gender}</h2>
-            </div>
-          ))}
-        </>
+        <List array={dota}/>
+        <Buttons text="next" bgcolor="green" color="white" size="25px" br="8px"/>
       </Layout>
     </>
   );

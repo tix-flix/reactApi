@@ -11,3 +11,8 @@
     display: flex;
     gap: 30px;
 }
+
+.log{
+  position: absolute;
+  left: 20px;
+}
