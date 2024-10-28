@@ -10,7 +10,7 @@ function Title({text, color, size}) {
             case "unknown":
                 return "gray"
             default:
-                return "pink"
+                return "black"
         }
     }
 

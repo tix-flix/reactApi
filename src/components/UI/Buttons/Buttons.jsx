@@ -1,7 +1,7 @@
 import React from 'react'
 import st from './Buttons.module.css'
 
-function Buttons({text, color, bgcolor, size, br}) {
+function Buttons({text, color, bgcolor, size, br, onClick}) {
     let styles = {
         color: color,
         backgroundColor: bgcolor,
@@ -9,7 +9,7 @@ function Buttons({text, color, bgcolor, size, br}) {
         borderRadius: br
     }
   return (
-    <button style={styles} className={st.btn}>{text}</button>
+    <button style={styles} className={st.btn} onClick={onClick}>{text}</button>
   )
 }
 

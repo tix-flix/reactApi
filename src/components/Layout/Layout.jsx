@@ -1,4 +1,5 @@
 import React from 'react'
+import st from './Layout.module.css'
 import Nav from '../Nav/Nav'
 
 function Layout({children}) {
@@ -9,7 +10,7 @@ function Layout({children}) {
             <div className="header">
                 <Nav/>
             </div>
-            <div className="main">
+            <div className={st.main}>
                 {children}
             </div>
         </div>
